@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="190.0" prefHeight="24.0" prefWidth="327.0" style="-fx-background-color: #2286c3;" text="Age Calculator" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <JFXButton id="closeButton" fx:id="closeButton" onAction="#Close" prefHeight="8.0" prefWidth="0.0" style="-fx-background-color: #ef5350;" text="X" textFill="WHITE" />
+         </graphic>
+      </Label>
+      <JFXDatePicker fx:id="dobDateTimePicker" defaultColor="#1c88e1" layoutX="70.0" layoutY="91.0" promptText="DOB" style="-fx-border-radius: 10;" />
+      <Label alignment="CENTER" layoutX="87.0" layoutY="56.0" prefHeight="18.0" prefWidth="124.0" style="-fx-border-radius: 10; -fx-border-color: #2286c3;" text="Enter Date of Birth" />
+      <JFXDatePicker fx:id="presentDateTimePicker" defaultColor="#1c88e1" layoutX="70.0" layoutY="187.0" promptText="Present Date" style="-fx-border-radius: 10;" />
+      <Label alignment="CENTER" layoutX="87.0" layoutY="144.0" prefHeight="18.0" prefWidth="124.0" style="-fx-border-radius: 10; -fx-border-color: #2286c3;" text="Present Date" />
+      <Label layoutX="63.0" layoutY="243.0" prefHeight="141.0" prefWidth="171.0" style="-fx-border-radius: 10; -fx-border-color: #0093c4; -fx-background-color: #e0e0e0;" />
+      <Label fx:id="yearsLabel" layoutX="94.0" layoutY="248.0" prefHeight="117.0" prefWidth="124.0" text="21">
+         <font>
+            <Font name="Bodoni MT" size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="daysLabel" layoutX="78.0" layoutY="340.0" prefHeight="25.0" prefWidth="171.0" text="years 8 months 23 days" />
+      <Separator layoutY="229.0" prefHeight="3.0" prefWidth="327.0" />
+   </children>
+</AnchorPane>
